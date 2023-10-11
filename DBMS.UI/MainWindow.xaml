@@ -1,0 +1,44 @@
+﻿<Window x:Class="DBMS.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DBMS.UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="951" Width="1865">
+    <Grid>
+        <StackPanel Name="databasesPanel" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Button Content="Add Db" Width="100" Height="30" Margin="5" Click="AddDb_Click" />
+            <ComboBox x:Name="selectedDB" Width="100" ItemsSource="{Binding AvailableDBs}" SelectionChanged="DBComboBox_SelectionChanged"/>
+        </StackPanel>
+        <StackPanel Name="databaseInteractions" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="150,0,0,0" Visibility="Hidden">
+            <Button Content="Add Table" Width="100" Height="30" Margin="5" Click="AddTable_Click" />
+            <Button Content="Delete Db" Width="100" Height="30" Margin="5" Click="DeleteDb_Click" />
+            <Label Content="Tables"></Label>
+            <ComboBox x:Name="selectedTable" Width="100" ItemsSource="{Binding AvailableTables}" SelectionChanged="TableComboBox_SelectionChanged" />
+            <StackPanel Orientation="Vertical" VerticalAlignment="Top" Margin="0,30,0,0">
+                <Button Name="PRODUCT_TABLES" FontSize="8" Content="ADD PRODUCTED TABLE" Width="100" Height="30" Click="PRODUCT_TABLES_Click" IsEnabled="False" />
+                <ComboBox x:Name="prodTable1" Width="100" ItemsSource="{Binding AvailableTables}" SelectionChanged="PRODUCT_SelectionChanged" />
+                <ComboBox x:Name="prodTable2" Width="100" ItemsSource="{Binding AvailableTables}" SelectionChanged="PRODUCT_SelectionChanged" />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Name="tableInteractions" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="300,0,0,0" Visibility="Hidden">
+            <Button Content="Add Row" Width="100" Height="30" Margin="5" Click="AddRow_Click" />
+            <StackPanel Orientation="Vertical" VerticalAlignment="Top">
+                <Button Name="addColumnButton" Content="Add Column" Width="100" Height="30" Click="AddColumn_Click" IsEnabled="False" />
+                <ComboBox Name="columnType" Width="100" Height="21" SelectionChanged="ComboBox_SelectionChanged">
+                    <ComboBoxItem Content="CHAR"/>
+                    <ComboBoxItem Content="DATE"/>
+                    <ComboBoxItem Content="DATE_INTERVAL"/>
+                    <ComboBoxItem Content="INT"/>
+                    <ComboBoxItem Content="REAL"/>
+                    <ComboBoxItem Content="STRING"/>
+                </ComboBox>
+                <Button Content="Delete Row" Width="100" Height="30" Margin="5" Click="DeleteRow_Click" />
+                <Button Content="Delete Column" Width="100" Height="30" Margin="5" Click="DeleteColumn_Click" />
+                <Button Content="Delete Table" Width="100" Height="30" Margin="5" Click="DeleteTable_Click" />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Name="tablesPanel" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    </Grid>
+</Window>

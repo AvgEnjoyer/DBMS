@@ -1,0 +1,29 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av" x:Class="DBMS.UI.ProvideParameters"
+        Title="Provide Parameters" Height="156" Width="315" av:DesignWidth="315">
+    <Grid>
+        <ListView x:Name="ParametersListView" Grid.ColumnSpan="3">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Parameter Name" Width="150">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Name}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Parameter Value" Width="150">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Value}" Width="120" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Submit" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="75" Height="30" Margin="10,0,0,10" Click="SubmitButton_Click"/>
+    </Grid>
+</Window>

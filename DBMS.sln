@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBMS.UI", "DBMS.UI\DBMS.UI.csproj", "{40EDC2A1-F037-4AE5-9372-F75F9DE051EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBMS.Core", "DBMS.Core\DBMS.Core.csproj", "{674F8645-DDF3-4E5B-A090-EFCA37FA68CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40EDC2A1-F037-4AE5-9372-F75F9DE051EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40EDC2A1-F037-4AE5-9372-F75F9DE051EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40EDC2A1-F037-4AE5-9372-F75F9DE051EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40EDC2A1-F037-4AE5-9372-F75F9DE051EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{674F8645-DDF3-4E5B-A090-EFCA37FA68CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{674F8645-DDF3-4E5B-A090-EFCA37FA68CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{674F8645-DDF3-4E5B-A090-EFCA37FA68CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{674F8645-DDF3-4E5B-A090-EFCA37FA68CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8093B5A-1F8E-4AE7-B041-388DCE493D9A}
+	EndGlobalSection
+EndGlobal

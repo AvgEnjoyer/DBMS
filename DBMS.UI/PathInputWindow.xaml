@@ -1,0 +1,30 @@
+﻿<Window x:Class="DBMS.UI.PathInputWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DBMS.UI"
+        mc:Ignorable="d"
+        Title="PathInputWindow" Height="389" Width="722">
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="224*"/>
+                <ColumnDefinition Width="137*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="pathTextBox" Margin="241,111,209,207" Grid.ColumnSpan="2" />
+            <Button Content="Submit" Click="SubmitButton_Click" RenderTransformOrigin="0.5,0.5" Margin="236,177,204,138" Grid.ColumnSpan="2" >
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.297"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            <Label Content="Enter dbms storage path" HorizontalAlignment="Left" Margin="302,85,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="170"/>
+        </Grid>
+
+    </Grid>
+</Window>
