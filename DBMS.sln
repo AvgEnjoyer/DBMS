@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBMS.UI", "DBMS.UI\DBMS.UI.csproj", "{40EDC2A1-F037-4AE5-9372-F75F9DE051EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBMS.UI", "DBMS.UI\DBMS.UI.csproj", "{40EDC2A1-F037-4AE5-9372-F75F9DE051EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBMS.Core", "DBMS.Core\DBMS.Core.csproj", "{674F8645-DDF3-4E5B-A090-EFCA37FA68CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBMS.Core", "DBMS.Core\DBMS.Core.csproj", "{674F8645-DDF3-4E5B-A090-EFCA37FA68CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQL-API", "GraphQL-API\GraphQL-API.csproj", "{186F5DBE-E04E-4E88-B7A1-C3E4A0FDE206}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{674F8645-DDF3-4E5B-A090-EFCA37FA68CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{674F8645-DDF3-4E5B-A090-EFCA37FA68CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{674F8645-DDF3-4E5B-A090-EFCA37FA68CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{186F5DBE-E04E-4E88-B7A1-C3E4A0FDE206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{186F5DBE-E04E-4E88-B7A1-C3E4A0FDE206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{186F5DBE-E04E-4E88-B7A1-C3E4A0FDE206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{186F5DBE-E04E-4E88-B7A1-C3E4A0FDE206}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

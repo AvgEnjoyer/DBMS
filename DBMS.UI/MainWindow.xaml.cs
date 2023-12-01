@@ -121,9 +121,9 @@ namespace DBMS.UI
             if (!string.IsNullOrEmpty(inputWindow.EnteredPath))
             {
                 dbManager.filePath = inputWindow.EnteredPath;
-                Databases = dbManager.GetAllDatabases();
-                DataContext = this;
             }
+            Databases = dbManager.GetAllDatabases();
+            DataContext = this;
         }
         private void ReloadDB()
         {
